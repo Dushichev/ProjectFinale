@@ -1,6 +1,6 @@
-from Animal_Obj import Animal_Obj
+from Work.model.animal import Animal
 
-class Add_animals:
+class Registry_animal:
     
     def __init__(self):
         self.__pack_animal = []
@@ -21,10 +21,10 @@ class Add_animals:
         return self.__count_domestic_animals
     
         
-    def add_pack_animal(self, new_animal: Animal_Obj):
+    def add_pack_animal(self, new_animal: Animal):
         self.__pack_animal.append(new_animal)
         self.__count_pack_animals += 1
     
-    def add_domestic_animal(self, new_animal: Animal_Obj):
+    def add_domestic_animal(self, new_animal: Animal):
         self.__domestic_animal.append(new_animal)
         self.__count_domestic_animals +=1

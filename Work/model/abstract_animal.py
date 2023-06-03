@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 
-
-class Animals(ABC):
+class Abstract_animal(ABC):
         
     @abstractmethod
     def print_name_animal():
